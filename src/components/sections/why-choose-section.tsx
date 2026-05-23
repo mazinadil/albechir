@@ -5,7 +5,7 @@ import { features } from "@/data/features";
 
 export function WhyChooseSection() {
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-[#f8fafc] to-white relative overflow-hidden">
+    <section className="py-[3.9rem] lg:py-[5.2rem] bg-gradient-to-b from-[#f8fafc] to-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-brand-blue/[0.02] blur-[100px]" />
 

@@ -1,8 +1,15 @@
 export const portfolioItems = [
   {
-    title: "Luxury Furniture Store",
+    title: "Conversion Optimized Product Page",
     category: "Shopify Store",
-    image: "/images/portfolio/furniture.jpg",
+    image: "/images/portfolio/product-page-cover.jpg",
+    preview: {
+      title: "Conversion Optimized Product Page",
+      alt: "Conversion optimized product page preview",
+      src: "/images/portfolio/product-page-preview.jpg",
+      width: 1086,
+      height: 1448,
+    },
   },
   {
     title: "Real Estate Website",
@@ -12,16 +19,20 @@ export const portfolioItems = [
       title: "Real Estate Website",
       alt: "Real estate website preview",
       src: "/images/portfolio/realestate-preview.jpg",
+      width: 941,
+      height: 1672,
     },
   },
   {
-    title: "Cleaning Services",
+    title: "SaaS Customer Support",
     category: "Landing Page",
     image: "/images/portfolio/cleaning-cover.jpg",
     preview: {
       title: "Cleaning Services Landing Page",
       alt: "Cleaning services landing page preview",
       src: "/images/portfolio/cleaning-preview.jpg",
+      width: 941,
+      height: 1672,
     },
   },
   {
@@ -32,6 +43,8 @@ export const portfolioItems = [
       title: "Dental Clinic Website",
       alt: "Dental clinic website preview",
       src: "/images/portfolio/dental-preview.jpg",
+      width: 941,
+      height: 1672,
     },
   },
 ];

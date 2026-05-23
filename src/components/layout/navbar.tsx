@@ -39,8 +39,8 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
-          ? "bg-brand-navy/80 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.4)] border-b border-white/[0.04]"
-          : "bg-transparent"
+          ? "bg-white/86 backdrop-blur-xl shadow-[0_10px_30px_rgba(15,23,42,0.08)] border-b border-gray-100"
+          : "bg-white/70 backdrop-blur-md"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,11 +48,11 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="relative block h-10 w-[188px] transition-opacity hover:opacity-90"
+            className="relative block h-8 w-[150px] transition-opacity hover:opacity-90 sm:h-10 sm:w-[188px]"
             aria-label="AL Bechir home"
           >
             <Image
-              src="/images/logo/al-bechir-logo-white-text.png"
+              src="/images/logo/al-bechir-logo-header-transparent.png"
               alt="AL Bechir"
               fill
               sizes="188px"
@@ -70,14 +70,14 @@ export function Navbar() {
                 className={cn(
                   "relative px-4 py-2 text-[13px] font-medium rounded-lg transition-all duration-200",
                   pathname === link.href
-                    ? "text-white"
-                    : "text-gray-400 hover:text-white"
+                    ? "text-gray-950"
+                    : "text-gray-500 hover:text-gray-950"
                 )}
               >
                 {pathname === link.href && (
                   <motion.div
                     layoutId="navbar-active"
-                    className="absolute inset-0 bg-white/[0.06] rounded-lg"
+                    className="absolute inset-0 bg-brand-blue/[0.08] rounded-lg"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.5 }}
                   />
                 )}
@@ -102,7 +102,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}
-            className="lg:hidden text-white p-2 rounded-lg hover:bg-white/5 transition-colors"
+            className="lg:hidden text-gray-900 p-2 rounded-lg hover:bg-brand-blue/5 transition-colors"
             aria-label="Toggle menu"
           >
             <AnimatePresence mode="wait">
@@ -140,7 +140,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:hidden bg-brand-navy-light/95 backdrop-blur-xl border-t border-white/[0.04] overflow-hidden"
+            className="lg:hidden bg-white/96 backdrop-blur-xl border-t border-gray-100 overflow-hidden"
           >
             <div className="px-4 py-5 space-y-1">
               {navLinks.map((link, i) => (
@@ -156,8 +156,8 @@ export function Navbar() {
                       className={cn(
                         "block px-4 py-3 text-sm font-medium rounded-xl transition-all",
                         pathname === link.href
-                          ? "text-white bg-white/[0.04]"
-                          : "text-gray-400 hover:text-white hover:bg-white/[0.04]"
+                          ? "text-gray-950 bg-brand-blue/[0.08]"
+                          : "text-gray-500 hover:text-gray-950 hover:bg-brand-blue/[0.06]"
                       )}
                     >
                       {link.label}

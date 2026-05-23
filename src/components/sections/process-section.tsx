@@ -5,7 +5,7 @@ import { processSteps } from "@/data/process";
 
 export function ProcessSection() {
   return (
-    <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+    <section className="py-[3.9rem] lg:py-[5.2rem] bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
